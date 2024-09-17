@@ -11,6 +11,7 @@ class TaskListCreateView(ListCreateAPIView):
     queryset = models.Task.objects.all()
     serializer_class = serializers.TaskSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
+    
 
     def get_queryset(self):
         if isinstance(self.request.user, User):
