@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
     # APPS
     'tasks',
+    'articles'
 
 
 
